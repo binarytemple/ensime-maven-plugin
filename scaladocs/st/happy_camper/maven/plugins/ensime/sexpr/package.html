@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>sexpr - ensime-maven-plugin 0.0.1-SNAPSHOT API - st.happy_camper.maven.plugins.ensime.sexpr</title>
+          <meta name="description" content="sexpr - ensime - maven - plugin 0.0.1 - SNAPSHOT API - st.happy camper.maven.plugins.ensime.sexpr" />
+          <meta name="keywords" content="sexpr ensime maven plugin 0.0.1 SNAPSHOT API st.happy camper.maven.plugins.ensime.sexpr" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../../index.html';
+            var hash = 'st.happy_camper.maven.plugins.ensime.sexpr.package';
+            window.location.href = url + '#' + hash;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../../package.html" class="extype" name="st">st</a>.<a href="../../../../package.html" class="extype" name="st.happy_camper">happy_camper</a>.<a href="../../../package.html" class="extype" name="st.happy_camper.maven">maven</a>.<a href="../../package.html" class="extype" name="st.happy_camper.maven.plugins">plugins</a>.<a href="../package.html" class="extype" name="st.happy_camper.maven.plugins.ensime">ensime</a></p>
+        <h1>sexpr</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sexpr</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="st.happy_camper.maven.plugins.ensime.sexpr.SExpr" visbl="pub" data-isabs="true" fullComment="no" group="No Group">
+      <a id="SExpr:SExpr"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SExpr.html"><span class="name">SExpr</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Represents S-Expression used by ENSIME configuration file.</p>
+    </li><li name="st.happy_camper.maven.plugins.ensime.sexpr.SExprEmitter" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="SExprEmitter:SExprEmitter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SExprEmitter.html"><span class="name">SExprEmitter</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Represents S-Expression emitter.</p>
+    </li><li name="st.happy_camper.maven.plugins.ensime.sexpr.SKeyword" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="SKeyword:SKeyword"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SKeyword.html"><span class="name">SKeyword</span></a><span class="params">(<span name="keyword">keyword: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="SExpr.html" class="extype" name="st.happy_camper.maven.plugins.ensime.sexpr.SExpr">SExpr</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="st.happy_camper.maven.plugins.ensime.sexpr.SList" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="SList:SList"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SList.html"><span class="name">SList</span></a><span class="params">(<span name="list">list: <span class="extype" name="scala.Seq">Seq</span>[<a href="SExpr.html" class="extype" name="st.happy_camper.maven.plugins.ensime.sexpr.SExpr">SExpr</a>]</span>)</span><span class="result"> extends <a href="SExpr.html" class="extype" name="st.happy_camper.maven.plugins.ensime.sexpr.SExpr">SExpr</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="st.happy_camper.maven.plugins.ensime.sexpr.SMap" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="SMap:SMap"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SMap.html"><span class="name">SMap</span></a><span class="params">(<span name="map">map: <span class="extype" name="scala.Seq">Seq</span>[(<a href="SKeyword.html" class="extype" name="st.happy_camper.maven.plugins.ensime.sexpr.SKeyword">SKeyword</a>, <a href="SExpr.html" class="extype" name="st.happy_camper.maven.plugins.ensime.sexpr.SExpr">SExpr</a>)]</span>)</span><span class="result"> extends <a href="SExpr.html" class="extype" name="st.happy_camper.maven.plugins.ensime.sexpr.SExpr">SExpr</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="st.happy_camper.maven.plugins.ensime.sexpr.SString" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="SString:SString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SString.html"><span class="name">SString</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="SExpr.html" class="extype" name="st.happy_camper.maven.plugins.ensime.sexpr.SExpr">SExpr</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="st.happy_camper.maven.plugins.ensime.sexpr.SExpr" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="SExpr:SExpr"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SExpr$.html"><span class="name">SExpr</span></a>
+      </span>
+      </h4>
+      <p class="comment cmt">A companion object for <code> SExpr</code>.</p>
+    </li><li name="st.happy_camper.maven.plugins.ensime.sexpr.SNil" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="SNil:SNil"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SNil$.html"><span class="name">SNil</span></a><span class="result"> extends <a href="SExpr.html" class="extype" name="st.happy_camper.maven.plugins.ensime.sexpr.SExpr">SExpr</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="st.happy_camper.maven.plugins.ensime.sexpr.STrue" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="STrue:STrue"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="STrue$.html"><span class="name">STrue</span></a><span class="result"> extends <a href="SExpr.html" class="extype" name="st.happy_camper.maven.plugins.ensime.sexpr.SExpr">SExpr</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="No Group">
+              <h3>No Group</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
