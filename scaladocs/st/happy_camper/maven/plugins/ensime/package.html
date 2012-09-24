@@ -95,53 +95,41 @@
       </h4>
       <p class="comment cmt">Represents a converter from type A to another type.</p>
     </li><li name="st.happy_camper.maven.plugins.ensime.As" visbl="pub" data-isabs="true" fullComment="no" group="No Group">
-      <a id="As[A,B]:As[A,B]"></a>
+      <a id="As[-A,+B]:As[A,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="package$$As.html"><span class="name">As</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="package$$As.html"><span class="name">As</span></a><span class="tparams">[<span name="A">-A</span>, <span name="B">+B</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">Represents a converter from some type to another type.</p>
-    </li><li name="st.happy_camper.maven.plugins.ensime.EnsimeGenerateMojo" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
-      <a id="EnsimeGenerateMojo:EnsimeGenerateMojo"></a>
+    </li><li name="st.happy_camper.maven.plugins.ensime.ConfigGenerator" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="ConfigGenerator:ConfigGenerator"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="EnsimeGenerateMojo.html"><span class="name">EnsimeGenerateMojo</span></a><span class="result"> extends <span class="extype" name="org.apache.maven.plugin.AbstractMojo">AbstractMojo</span></span>
+        <a href="ConfigGenerator.html"><span class="name">ConfigGenerator</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Represents an ENSIME configuration file generator.</p>
+    </li><li name="st.happy_camper.maven.plugins.ensime.GenerateMojo" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="GenerateMojo:GenerateMojo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GenerateMojo.html"><span class="name">GenerateMojo</span></a><span class="result"> extends <span class="extype" name="org.apache.maven.plugin.AbstractMojo">AbstractMojo</span></span>
       </span>
       </h4>
       
-    </li><li name="st.happy_camper.maven.plugins.ensime.Project" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
-      <a id="Project:Project"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">case class</span>
-      </span>
-      <span class="symbol">
-        <a href="Project.html"><span class="name">Project</span></a><span class="params">(<span name="subprojects">subprojects: <span class="extype" name="scala.List">List</span>[<a href="SubProject.html" class="extype" name="st.happy_camper.maven.plugins.ensime.SubProject">SubProject</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
-      </span>
-      </h4>
-      <p class="comment cmt">Represents ENSIME project.</p>
-    </li><li name="st.happy_camper.maven.plugins.ensime.SubProject" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
-      <a id="SubProject:SubProject"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">case class</span>
-      </span>
-      <span class="symbol">
-        <a href="SubProject.html"><span class="name">SubProject</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="version">version: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="runtimeDeps">runtimeDeps: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="compileDeps">compileDeps: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="testDeps">testDeps: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="sourceRoots">sourceRoots: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="target">target: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="testTarget">testTarget: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dependsOnModule">dependsOnModule: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="formattingPreferences">formattingPreferences: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Either">Either</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Boolean">Boolean</span>]]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
-      </span>
-      </h4>
-      <p class="comment cmt">Represents sub-project of ENSIME project.</p>
     </li></ol>
             </div>
 
@@ -149,30 +137,18 @@
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="st.happy_camper.maven.plugins.ensime.Project" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
-      <a id="Project:Project"></a>
+              <ol><li name="st.happy_camper.maven.plugins.ensime.model" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
+      <a id="model:model"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">object</span>
+        <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <a href="Project$.html"><span class="name">Project</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="model/package.html"><span class="name">model</span></a>
       </span>
       </h4>
-      <p class="comment cmt">A companion object for <code> Project</code>.</p>
-    </li><li name="st.happy_camper.maven.plugins.ensime.SubProject" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
-      <a id="SubProject:SubProject"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="SubProject$.html"><span class="name">SubProject</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
-      </span>
-      </h4>
-      <p class="comment cmt">A companion object for <code> SubProject</code>.</p>
+      
     </li><li name="st.happy_camper.maven.plugins.ensime.sexpr" visbl="pub" data-isabs="false" fullComment="no" group="No Group">
       <a id="sexpr:sexpr"></a>
       <h4 class="signature">

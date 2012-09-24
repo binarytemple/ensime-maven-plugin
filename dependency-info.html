@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ensime-maven-plugin - Project Mailing Lists</title>
+    <title>ensime-maven-plugin - Dependency Information</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -76,14 +76,14 @@
                           <a href="distribution-management.html" title="Distribution Management">Distribution Management</a>
             </li>
                       <li class="none">
-                          <a href="dependency-info.html" title="Dependency Information">Dependency Information</a>
-            </li>
+            <strong>Dependency Information</strong>
+          </li>
                       <li class="none">
                           <a href="source-repository.html" title="Source Repository">Source Repository</a>
             </li>
                       <li class="none">
-            <strong>Mailing Lists</strong>
-          </li>
+                          <a href="mail-lists.html" title="Mailing Lists">Mailing Lists</a>
+            </li>
                       <li class="none">
                           <a href="issue-tracking.html" title="Issue Tracking">Issue Tracking</a>
             </li>
@@ -132,7 +132,16 @@
         
         <div id="bodyColumn"  class="span10" >
                                   
-            <div class="section"><h2>Project Mailing Lists<a name="Project_Mailing_Lists"></a></h2><a name="Project_Mailing_Lists"></a><p>There are no mailing lists currently associated with this project.</p></div>
+            <div class="section"><h2>Dependency Information<a name="Dependency_Information"></a></h2><a name="Dependency_Information"></a><div class="section"><h3>Apache Maven<a name="Apache_Maven"></a></h3><a name="Apache_Maven"></a><div class="source"><pre class="prettyprint">&lt;dependency&gt;
+  &lt;groupId&gt;st.happy_camper.maven.plugins&lt;/groupId&gt;
+  &lt;artifactId&gt;ensime-maven-plugin&lt;/artifactId&gt;
+  &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+  &lt;type&gt;${project.packaging&lt;/type&gt;
+&lt;/dependency&gt;</pre></div></div><div class="section"><h3>Apache Buildr<a name="Apache_Buildr"></a></h3><a name="Apache_Buildr"></a><div class="source"><pre class="prettyprint">'st.happy_camper.maven.plugins:ensime-maven-plugin:${project.packaging:0.0.1-SNAPSHOT'</pre></div></div><div class="section"><h3>Apache Ant<a name="Apache_Ant"></a></h3><a name="Apache_Ant"></a><div class="source"><pre class="prettyprint">&lt;dependency org=&quot;st.happy_camper.maven.plugins&quot; name=&quot;ensime-maven-plugin&quot; rev=&quot;0.0.1-SNAPSHOT&quot;&gt;
+  &lt;artifact name=&quot;ensime-maven-plugin&quot; type=&quot;${project.packaging&quot; /&gt;
+&lt;/dependency&gt;</pre></div></div><div class="section"><h3>Groovy Grape<a name="Groovy_Grape"></a></h3><a name="Groovy_Grape"></a><div class="source"><pre class="prettyprint">@Grapes(
+@Grab(group='st.happy_camper.maven.plugins', module='ensime-maven-plugin', version='0.0.1-SNAPSHOT')
+)</pre></div></div><div class="section"><h3>Grails<a name="Grails"></a></h3><a name="Grails"></a><div class="source"><pre class="prettyprint">compile 'st.happy_camper.maven.plugins:ensime-maven-plugin:0.0.1-SNAPSHOT'</pre></div></div><div class="section"><h3>Leiningen<a name="Leiningen"></a></h3><a name="Leiningen"></a><div class="source"><pre class="prettyprint">[st.happy_camper.maven.plugins/ensime-maven-plugin &quot;0.0.1-SNAPSHOT&quot;]</pre></div></div><div class="section"><h3>SBT<a name="SBT"></a></h3><a name="SBT"></a><div class="source"><pre class="prettyprint">libraryDependencies += &quot;st.happy_camper.maven.plugins&quot; %% &quot;ensime-maven-plugin&quot; % &quot;0.0.1-SNAPSHOT&quot;</pre></div></div></div>
                   </div>
             </div>
       
